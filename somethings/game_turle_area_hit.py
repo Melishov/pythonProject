@@ -30,4 +30,5 @@ turtle.setheading(EAST)
 turtle.speed(ANIMATION_SPEED)
 angle=float(turtle.numinput("Угол броска","Введите угол для броска черепахи к цели (0-360):\n"))
 force=int(input("Введите силу броска (1-10):\n"))
+test
 190
