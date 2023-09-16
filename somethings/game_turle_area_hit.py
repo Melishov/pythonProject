@@ -47,19 +47,19 @@ while condition:
          turtle.textinput("Ты попал в цель!","Всё!")
      else:
           looser_answer=turtle.textinput("Ха-ха лузер!","Попробуешь ещё раз?")
-          if looser_answer == "Да" or "Да!" or "Ага" or "Ага!":
+          if looser_answer == "Да":
               turtle.reset()
-              condition = True
+              condition=True
           else:
               break
-              condition = False
+              condition=False
     else:
      looser_answer=turtle.textinput("Ха-ха лузер!","Попробуешь ещё раз?")
-     if looser_answer == "Да" or "Да!" or "Ага" or "Ага!":
+     if looser_answer == "Да":
            turtle.reset()
-           condition = True
+           condition=True
      else:
          break
-         condition = False
+         condition=False
     #turtle.done()
 
