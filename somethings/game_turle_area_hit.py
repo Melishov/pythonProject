@@ -48,10 +48,18 @@ while condition:
      else:
           looser_answer=turtle.textinput("Ха-ха лузер!","Попробуешь ещё раз?")
           if looser_answer == "Да" or "Да!" or "Ага" or "Ага!":
+              turtle.reset()
+              condition = True
+          else:
+              break
               condition = False
     else:
      looser_answer=turtle.textinput("Ха-ха лузер!","Попробуешь ещё раз?")
      if looser_answer == "Да" or "Да!" or "Ага" or "Ага!":
-           condition = False
+           turtle.reset()
+           condition = True
+     else:
+         break
+         condition = False
     #turtle.done()
 
