@@ -1,0 +1,2 @@
+for k in range(0,1001,10):
+    print(k)

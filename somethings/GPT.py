@@ -1,19 +1,17 @@
 import g4f
 
-from g4f.Provider import (
-    Bard,
-    Bing,
-    HuggingChat,
-    OpenAssistant,
-    OpenaiChat,
-)
+def ask_gpt(messages: list) -> str:
+    response=g4f.ChatCompletion.create(
+        model=g4f.models.gpt_4,
+        messages=messages)
+    print(response)
+    return response
 
-# Usage:
-response = g4f.ChatCompletion.create(
-    model=g4f.models.default,
-    messages=[{"role": "user", "content": "Hello"}],
-    provider=Bard,
-    #cookies=g4f.get_cookies(".google.com"),
-    cookies={"cookie_name": "value", "cookie_name2": "value2"},
-    auth=True
-)
+
+messages = []
+while True:
+    question=input()
+    messages.append({"role": "user", "content": question})
+
+    answer = ask_gpt(messages=messages)
+    messages.append({"role": "assistant", "content": answer})
