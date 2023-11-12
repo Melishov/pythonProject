@@ -1,6 +1,6 @@
 def main():
     answer="д"
-    list_coffe=open("coffe.txt","a")
+    list_coffe=open("coffe.txt","w")
     while answer=="д" or answer=="Д":
         sort=input("Введите название сорта кофе: \n")
         weight=float(input("Введите вес кофе: \n"))
