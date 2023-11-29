@@ -1,0 +1,6 @@
+def main():
+    friends_names=['Stas','Igor','Semen','Vadim','Oleg']
+    print(friends_names[0])
+    print(friends_names[-1])
+    print(friends_names[1:4])
+main()

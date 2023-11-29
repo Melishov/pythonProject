@@ -1,0 +1,10 @@
+import random
+def main():
+    file_with_random_numbers=open("random.txt","w")
+    count_of_numbers=int(input("How many differents numbers you want to see in your file? \n"))
+    for numbers in range(count_of_numbers):
+        number=random.randint(1,500)
+        file_with_random_numbers.write(f"{number}\n")
+    file_with_random_numbers.close()
+    print("File random.txt was created")
+main()
