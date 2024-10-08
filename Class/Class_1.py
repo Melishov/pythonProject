@@ -7,7 +7,8 @@ class Restaraunt:
     def open_restaraunt(self):
         print("Ресторан открыт!")
 amato=Restaraunt("Амато","Японский")
-print(amato.name)
-print(amato.type)
+tokyo=Restaraunt("Токио","Японский")
+jojo=Restaraunt("JoJo","Универсальный")
 amato.describe_restaurant()
-amato.open_restaraunt()
+tokyo.describe_restaurant()
+jojo.describe_restaurant()
